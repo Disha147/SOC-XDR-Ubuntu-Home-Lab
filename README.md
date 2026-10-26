@@ -77,10 +77,24 @@ A failed login does not automatically mean an attack occurred. The source, frequ
 
 The initial authentication-failure investigation has been completed. Future improvements may include investigating additional Windows security events, comparing normal and suspicious login patterns, creating documented investigation playbooks, and practicing further alert-triage scenarios.
 
-9. Project Evidence
+9. Project Evidences
+ 
+### Wazuh SIEM - Failed Logon Alert
+Captured authentication failures (`Rule ID: 60122`) mapped from Windows endpoints to the Wazuh manager dashboard.
 
-Screenshots documenting the Wazuh dashboard, monitored endpoint, and authentication-failure investigation will be added here after removing sensitive information.
+![Wazuh Failed Logon Alert](path/to/Wazuh-Failed-Logon-Alert.png)
 
-10. Disclaimer
+### Windows Event ID 4625: Failed Logon
+Local security audit log showing a failed logon attempt due to an unknown username or bad password (`Status: 0xC000006D`).
+
+![Windows Event ID 4625](path/to/Windows-Event-4625.png)
+
+### Windows Event ID 4624: Successful Service Logon
+Verification of a successful service logon (`Logon Type: 5`) under SYSTEM privileges for baseline comparison.
+
+![Windows Event ID 4624 Service Logon](path/to/Windows-Event-4624-Service-Logon.png)
+
+
+11. Disclaimer
 
 This is a personal educational lab conducted in a controlled virtual environment. The project is intended for cybersecurity learning and defensive security practice.
