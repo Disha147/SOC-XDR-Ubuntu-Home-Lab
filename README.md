@@ -82,17 +82,17 @@ The initial authentication-failure investigation has been completed. Future impr
 ### Wazuh SIEM - Failed Logon Alert
 Captured authentication failures (`Rule ID: 60122`) mapped from Windows endpoints to the Wazuh manager dashboard.
 
-![Wazuh Failed Logon Alert](path/to/Wazuh-Failed-Logon-Alert.png)
+![Wazuh Failed Logon Alert](Wazuh-Failed-Logon-Alert.png.png)
 
 ### Windows Event ID 4625: Failed Logon
 Local security audit log showing a failed logon attempt due to an unknown username or bad password (`Status: 0xC000006D`).
 
-![Windows Event ID 4625](path/to/Windows-Event-4625.png)
+![Windows Event ID 4625](Windows-Event-4625.png.png)
 
 ### Windows Event ID 4624: Successful Service Logon
 Verification of a successful service logon (`Logon Type: 5`) under SYSTEM privileges for baseline comparison.
 
-![Windows Event ID 4624 Service Logon](path/to/Windows-Event-4624-Service-Logon.png)
+![Windows Event ID 4624 Service Logon](Windows-Event-4624-Service-Logon.png.png)
 
 
 11. Disclaimer
